@@ -48,35 +48,35 @@ Discussions in these topics can begin as soon as your course is available.
 
 To create a course-wide discussion topic, follow these steps.
 
-#. Open your course in Studio.
+1. Open your course in Studio.
 
-#. Select **Content**, then **Pages & Resources**.
+2. Select **Content**, then **Pages & Resources**.
 
-#. Click on the gear icon on top-right of **Discussion** tile (as seen below). This will take you to a configuration page where you can select a discussion provider.
+3. Click on the gear icon on top-right of **Discussion** tile (as seen below). This will take you to a configuration page where you can select a discussion provider.
 
 .. image:: ../../../shared/images/Discussion_tile_in_pages_and_resources.png
   :width: 300
   :alt: Appearance of Discussion tile in Pages & Resources.
 
-#. Select edx as discussion provider by checking the box on top-right of **edx** tile. Click Next.
+4. Select edx as discussion provider by checking the box on top-right of **edx** tile. Click Next.
 
 .. image:: ../../../shared/images/Tile_for_edx_discussion_provider.png
   :width: 300
   :alt: Appearance of tile for edx discussion provider in configuration.
 
-#. Scroll to **General discussion topics**. You would see a topic named **General** already there. This topic cannot be deleted but can be renamed.
+5. Scroll to **General discussion topics**. You would see a topic named **General** already there. This topic cannot be deleted but can be renamed.
 
 .. image:: ../../../shared/images/General_discussion_topics_edx_discussions.png
   :width: 300
   :alt: A topic named General will already exist in General discussion topics.
 
-#. Click on **Add topic** and add a topic name (e.g. "Course Q&A")
+6. Click on **Add topic** and add a topic name (e.g. "Course Q&A")
 
 .. image:: ../../../shared/images/Add_general_topic_name_edx_discussions.png
   :width: 300
   :alt: Adding general topic name.
 
-#. Click Save.
+7. Click Save.
 
 When learners select the **Discussion** page for your course, the drop-down
 Discussion list now includes the topic you added.
