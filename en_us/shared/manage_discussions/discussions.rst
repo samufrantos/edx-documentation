@@ -50,113 +50,40 @@ To create a course-wide discussion topic, follow these steps.
 
 #. Open your course in Studio.
 
-#. Select **Settings**, then **Advanced Settings**.
+#. Select **Content**, then **Pages & Resources**.
 
-#. Scroll down to the **Discussion Topic Mapping** policy key. By default, its
-   value looks like this.
+#. Click on the gear icon on top-right of **Discussion** tile (as seen below). This will take you to a configuration page where you can select a discussion provider.
 
-   ::
+.. image:: ../../../shared/images/Discussion_tile_in_pages_and_resources.png
+  :width: 300
+  :alt: Appearance of Discussion tile in Pages & Resources.
 
-     {
-         "General": {
-             "id": "course"
-         }
-     }
+#. Select edx as discussion provider by checking the box on top-right of **edx** tile. Click Next.
 
-4. Copy the three lines provided for the "General" topic and paste
-   them above the closing brace character (``}``).
+.. image:: ../../../shared/images/Tile_for_edx_discussion_provider.png
+  :width: 300
+  :alt: Appearance of tile for edx discussion provider in configuration.
 
+#. Scroll to **General discussion topics**. You would see a topic named **General** already there. This topic cannot be deleted but can be renamed.
 
-   ::
+.. image:: ../../../shared/images/General_discussion_topics_edx_discussions.png
+  :width: 300
+  :alt: A topic named General will already exist in General discussion topics.
 
-     {
-         "General": {
-             "id": "course"
-         }
-         "General": {
-             "id": "course"
-         }
-     }
+#. Click on **Add topic** and add a topic name (e.g. "Course Q&A")
 
+.. image:: ../../../shared/images/Add_general_topic_name_edx_discussions.png
+  :width: 300
+  :alt: Adding general topic name.
 
-5. Replace the second "General" with the quoted name of your new topic. For
-   example, name the new topic "Questions about the Course".
-
-   ::
-
-     {
-        "General": {
-            "id": "course"
-        }
-        "Questions about the Course": {
-             "id": "course"
-        }
-     }
-
-6. Change the value for the second "id" to a unique identifier. For example,
-   append a reference to the name of the topic.
-
-   ::
-
-     {
-        "General": {
-            "id": "course"
-        }
-        "Questions about the Course": {
-             "id": "course_q"
-        }
-     }
-
-   .. note:: In discussion topic IDs, you can use only alphanumeric characters
-     and these special characters: underscore, hyphen, and period.
-
-7. Add a comma after the first closing brace (``},``).
-
-   ::
-
-     {
-        "General": {
-            "id": "course"
-        },
-        "Questions about the Course": {
-             "id": "course_q"
-        }
-     }
-
-#. Select **Save Changes**.
-
-   Studio checks the syntax of your entry and reformats your entry to add line
-   feeds and indentation.
-
-#. Scroll back to the **Discussion Topic Mapping** field to verify that your
-   entry was saved as you expect. Entries that do not contain all of the
-   required punctuation characters revert to the previous value when you save,
-   and no warning is presented.
+#. Click Save.
 
 When learners select the **Discussion** page for your course, the drop-down
 Discussion list now includes the topic you added.
 
- .. image:: ../../../shared/images/NewCategory_Discussion.png
+ .. image:: ../../../shared/images/New_general_discussion_topic.png
   :width: 300
   :alt: A new topic named Course Q&A in the list of discussion topics.
-
-
-.. note:: To make a particular course-wide discussion topic the default topic
-   when learners add new posts on the **Discussion** page, add a "default"
-   attribute with a value of ``true`` to the topic's definition.
-
-   ::
-
-     {
-        "General": {
-            "id": "course"
-        },
-        "Questions about the Course": {
-            "id": "course_q",
-            "default": true
-        }
-     }
-
 
 .. note:: In courses that use cohorts, the course-wide discussion topics that
    you add are unified. All posts can be read and responded to by every
