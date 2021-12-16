@@ -141,7 +141,7 @@ information about release dates and the visibility of components, see
 :ref:`Controlling Content Visibility`.
 
 In contrast, :ref:`course-wide discussion topics<Create CourseWide Discussion
-Topics>` that you create on the **Advanced Settings** page in Studio,
+Topics>` that you create on the **Pages & Resources > Discussions** page in Studio,
 including the default "General" discussion topic, are immediately visible,
 regardless of whether the course has started. They are not associated with any
 particular section or subsection of the course, and are not subject to
@@ -156,29 +156,26 @@ Allowing Learners to Make Anonymous Discussion Posts
 
 By default, when learners participate in a discussion, their usernames are
 visible in the discussion. You can allow learners to make discussion posts
-that are anonymous to their peers: their usernames are not visible to other
-learners. Their usernames will still be visible to course staff.
+that are anonymous i.e. their usernames are not visible. You can also choose
+whether the anonymous posts that learners make are anonymous only to their
+peers or to the course staff as well.
 
 To allow anonymous discussion posts in your course, follow these steps.
 
-#. In Studio, select **Settings**, then select **Advanced Settings**.
+#. Navigate to edx discussion provider configuration by following steps 1 to 4
+in :ref:`Create CourseWide Discussion Topics`.
 
-#. Locate the **Allow Anonymous Discussion Posts to Peers** field. The default
-   value is ``false``.
+#. Toggle the **Allow anonymous discussion posts** to enable learner make
+posts that are anonymous to everyone.
 
-#. Change the value of the setting to ``true``.
+#. Once anonymous posts are enabled, you can toggle **Allow anonymous discussion posts to peers**
+to make anonymous posts visible to course staff.
 
-#. Select **Save Changes**.
+#. Click **Save**.
 
-Learners can now create discussion posts in your course that are anonymous
-to other learners.
-
-.. note:: The **Advanced Settings** page in Studio includes another field named
-   **Allow Anonymous Discussion Posts**. Setting the value of that field to
-   ``true`` enables learners to create discussion posts that are anonymous to
-   course staff, as well as to other learners. As a best practice, edX
-   recommends that you do not set this field to ``true``.
-
+ .. image:: ../../../shared/images/Toggle_switch_anonymous_posts.png
+  :width: 300
+  :alt: Toggle switches for anonymous posts in edx discussions configuration.
 
 .. _Discussions on Mobile Apps:
 
