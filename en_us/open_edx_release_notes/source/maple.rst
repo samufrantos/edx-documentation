@@ -49,7 +49,7 @@ Learner Experiences
 Learning Micro-Frontend (MFE)
 -----------------------------
 
-The Learning MFE (including both "courseware" and the "course home"") is the default course experience in Maple. The Nutmeg release will likely entirely drop support for Legacy (that is, LMS-rendered) course experience entirely.
+The Learning MFE (including both "courseware" and the "course home") is the default course experience in Maple. The Nutmeg release will likely entirely drop support for the legacy (that is, LMS-rendered) course experience entirely.
 
 Configuration
 ^^^^^^^^^^^^^
