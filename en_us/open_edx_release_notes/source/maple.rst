@@ -38,7 +38,7 @@ to this::
     CORS_ORIGIN_WHITELIST = ["https://foo.com"]
 
 Learning Micro-Frontend (MFE) becomes the default courseware experience
---------------------------------------------------------------
+-----------------------------------------------------------------------
 
 Warning: Entrance exams, non-standard XML and HTML tags, and course hierarchies are not supported. See below for more details.
 
