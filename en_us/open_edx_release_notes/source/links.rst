@@ -39,6 +39,10 @@
 
 .. _Profile Images API Version 1.0: http://edx.readthedocs.io/projects/edx-platform-api/en/latest/profile_images/index.html
 
+.. Maple doc links:
+
+.. _tutor mfe plugin README: https://github.com/overhangio/tutor-mfe#customise-mfes-logos
+
 .. Lilac doc links:
 
 .. _ProctorTrack Service from Verificient: https://www.verificient.com/proctortrack/
