@@ -40,7 +40,7 @@ to this::
 Learning Micro-Frontend (MFE) becomes the default courseware experience
 --------------------------------------------------------------
 
-Entrance exams, non-standard XML and HTML tags, and course hierarchies are not supported. See below for more details.
+Warning: Entrance exams, non-standard XML and HTML tags, and course hierarchies are not supported. See below for more details.
 
 ===================
 Learner Experiences
