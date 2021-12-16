@@ -109,8 +109,7 @@ Certificates
 
 Various bug fixes and updates around course certificate generation
 
-- Removal of the allow_certificate field on the UserProfile model has been completed, and the column has been dropped (
-  * Note: if your UserProfile table has a lot of rows, the migration to drop the column could lock the table and necessitate a status page/downtime.
+- Removal of the `allow_certificate` field on the `UserProfile` model has been completed, and the column has been dropped (Note: if your UserProfile table has a lot of rows, the migration to drop the column could lock the table and necessitate a status page/downtime.)
 - The temporary waffle flag certificates_revamp.use_allowlist has been removed, as testing during the rollout of this feature has been completed. All course runs now use the new allowlist behavior, which is described here (need link)
 - Code to generate a new or update an existing course certificate has been consolidated:
   * The temporary waffle flag certificates_revamp.use_updated has been removed, as testing during the rollout of this feature has been completed. All course runs now use the new consolidated course certificate behavior, which is described here.
