@@ -141,7 +141,7 @@ information about release dates and the visibility of components, see
 :ref:`Controlling Content Visibility`.
 
 In contrast, :ref:`course-wide discussion topics<Create CourseWide Discussion
-Topics>` that you create on the **Pages & Resources > Discussions** page in Studio,
+Topics>` that you create on the edx discussions configuration page in Studio,
 including the default "General" discussion topic, are immediately visible,
 regardless of whether the course has started. They are not associated with any
 particular section or subsection of the course, and are not subject to
@@ -162,16 +162,16 @@ peers or to the course staff as well.
 
 To allow anonymous discussion posts in your course, follow these steps.
 
-#. Navigate to edx discussion provider configuration by following steps 1 to 4
+1. Navigate to edx discussion provider configuration by following steps 1 to 4
 in :ref:`Create CourseWide Discussion Topics`.
 
-#. Toggle the **Allow anonymous discussion posts** to enable learner make
+2. Toggle the **Allow anonymous discussion posts** to enable learner make
 posts that are anonymous to everyone.
 
-#. Once anonymous posts are enabled, you can toggle **Allow anonymous discussion posts to peers**
+3. Once anonymous posts are enabled, you can toggle **Allow anonymous discussion posts to peers**
 to make anonymous posts visible to course staff.
 
-#. Click **Save**.
+4. Click **Save**.
 
  .. image:: ../../../shared/images/Toggle_switch_anonymous_posts.png
   :width: 300
