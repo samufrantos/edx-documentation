@@ -87,6 +87,7 @@ Altered Features
 Maintained Features
 ^^^^^^^^^^^^^^^^^^^
 - Features which remain functional within MFE courses, but still will be served by the legacy experience in Maple are:
+
   * The XBlock student view, as exposed via the unit iframe in MFE courseware
   * Static tabs (aka Custom Pages)
   * Discussions tab
