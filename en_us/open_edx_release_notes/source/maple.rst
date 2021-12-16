@@ -79,6 +79,7 @@ Altered Features
 - Courses which use the  course key pattern ORG/COURSE/RUN instead of the new pattern, course-v1:ORG+COURSE+RUN,  are stored in our legacy storage service, Old Mongo, and will not be served by the new MFE. Instead they default to the legacy experience. But this pattern has been deprecated and will be removed.
 - Author-written JS inside a Custom Javascript Problem block which acts outside the boundary of a unit will fail. Problem blocks will no longer be able to modify other problem blocks or access any parent elements using javascript. The main use case is pulling in content from a students’ previous answers or state. This is still possible with the get_statefn attribute all within the iframe. Although this may remove some small pieces of custom functionality, it is in the interests of adhering to security protocols.
 - Course Navigation on the MFE and legacy experience will have minor differences.
+
   * The breadcrumbs displayed at the top of a page in the legacy experience were organized by Course -> Sequence -> Unit -> Content Block Title, but in the new MFE breadcrumbs only includes Course -> Sequence -> Unit. This removes visual clutter of having the same title repeated in a small space on the page.
   * the MFE does change the URL scheme from:
   * LMS_BASE/courses/COURSE_KEY/courseware/SECTION_URLNAME/SEQUENCE_URLNAME/UNIT_INDEX?activate_block_id=COMPONENT_KEYto: LEARNING_MFE_BASE/course/COURSE_KEY/SEQUENCE_KEY/UNIT_KEY
