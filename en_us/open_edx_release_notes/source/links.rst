@@ -45,7 +45,17 @@
 
 .. _OEP-42: https://open-edx-proposals.readthedocs.io/en/latest/best-practices/oep-0042-bp-authentication.html
 
+.. _Allowlist ADR: https://github.com/edx/edx-platform/blob/master/lms/djangoapps/certificates/docs/decisions/001-allowlist-cert-requirements.rst
+
+.. _cert_generation command: https://github.com/edx/edx-platform/blob/master/lms/djangoapps/certificates/management/commands/cert_generation.py
+
 .. _tutor mfe plugin README: https://github.com/overhangio/tutor-mfe#customise-mfes-logos
+
+.. _DEPR-156: https://openedx.atlassian.net/browse/DEPR-156
+
+.. _PR 27646: https://github.com/edx/edx-platform/pull/27646
+
+.. _DEPR-159: https://openedx.atlassian.net/browse/DEPR-159
 
 .. Lilac doc links:
 

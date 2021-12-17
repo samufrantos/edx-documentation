@@ -119,22 +119,22 @@ Certificates
 
 Various bug fixes and updates around course certificate generation
 
-- Removal of the `allow_certificate` field on the `UserProfile` model has been completed, and the column has been dropped (Note: if your UserProfile table has a lot of rows, the migration to drop the column could lock the table and necessitate a status page/downtime.)
-- The temporary waffle flag certificates_revamp.use_allowlist has been removed, as testing during the rollout of this feature has been completed. All course runs now use the new allowlist behavior, which is described here (need link)
+- Removal of the :code:`allow_certificate` field on the :code:`UserProfile` model has been completed, and the column has been dropped (Note: if your UserProfile table has a lot of rows, the migration to drop the column could lock the table and necessitate a status page/downtime.)
+- The temporary waffle flag :code:`certificates_revamp.use_allowlist` has been removed, as testing during the rollout of this feature has been completed. All course runs now use the new allowlist behavior, which is described in the `Allowlist ADR`_
 - Code to generate a new or update an existing course certificate has been consolidated:
 
-  * The temporary waffle flag certificates_revamp.use_updated has been removed, as testing during the rollout of this feature has been completed. All course runs now use the new consolidated course certificate behavior, which is described here.
+  * The temporary waffle flag :code:`certificates_revamp.use_updated` has been removed, as testing during the rollout of this feature has been completed. All course runs now use the new consolidated course certificate behavior, which is described here.
   * Code to generate (create or update) PDF course certificates has been removed from edx-platform.
-  * The fix_ungraded_certs, regenerate_user, resubmit_error_certificates, and ungenerated_certs management commands have been removed. In their place, please use the cert_generation command. (needs formatting & links)
+  * The :code:`fix_ungraded_certs`, :code:`regenerate_user`, :code:`resubmit_error_certificates`, and :code:`ungenerated_certs` management commands have been removed. In their place, please use the `cert_generation command`_.
 - In an effort to be more inclusive, code referencing a Certificate Whitelist has been updated to instead refer to a Certificate Allowlist. The CertificateWhitelistmodel has been replaced by the CertificateAllowlistmodel (data is automatically copied over to the new model by a data migration).
-- The management command named cert_whitelist has been removed. In its place, please use the Certificate Allowlist, which can be accessed from the Instructor tab on the course page in the LMS. (needs formatting & links)
-- The Segment event edx.bi.user.certificate.generate will no longer emit from the courseware when self-generated certificate generation is attempted by a user. There was some overlap in this Certificate event with the edx.certificate.createdevent sent during certificate generation. A self-generated certificate event will have a generation_mode of self (versus batch for certificates generated automatically).
+- The management command named :code:`cert_whitelist` has been removed. In its place, please use the Certificate Allowlist, which can be accessed from the Instructor tab on the course page in the LMS. (`DEPR-156`_)
+- The Segment event :code:`edx.bi.user.certificate.generate` will no longer emit from the courseware when self-generated certificate generation is attempted by a user. There was some overlap in this Certificate event with the :code:`edx.certificate.createdevent` sent during certificate generation. A self-generated certificate event will have a generation_mode of self (versus batch for certificates generated automatically).
 - Removed use of the modulestore wherever possible in the certificates Django app of edx-platform. Changes include:
   * Using a course’s CourseOverview over retrieving course data from the modulestore
-  * Supporting change: Update the list_with_level function in the Instructor Dashboard to accept a course-id over the entire course object (PR: 27646)
-- Removed the AUDIT_CERT_CUTOFF_DATE setting. Awarding Audit certificates will not be supported in V2 of Course Certificates
-- Removed the openedx/core/djangoapps/certificates app by merging the single api.py file into lms/djangoapps/certificates. All APIs functions have been been moved as is, so if you have any code in a third party repository that used this API, please point them to the new path. openedx/core/djangoapps/certificates/api.py → lms/djangoapps/certificates/api.py
-- Removed backpopulate_program_credentials management command in place of an updated notify_credentials command.
+  * Supporting change: Update the :code:`list_with_level` function in the Instructor Dashboard to accept a course-id over the entire course object (`PR 27646`_)
+- Removed the :code:`AUDIT_CERT_CUTOFF_DATE` setting. Awarding Audit certificates will not be supported in V2 of Course Certificates (`DEPR-159`_)
+- Removed the :code:`openedx/core/djangoapps/certificates` app by merging the single :code:`api.py` file into :code:`lms/djangoapps/certificates`. All APIs functions have been been moved as is, so if you have any code in a third party repository that used this API, please point them to the new path. openedx/core/djangoapps/certificates/api.py → lms/djangoapps/certificates/api.py
+- Removed :code:`backpopulate_program_credentials` management command in place of an updated :code:`notify_credentials` command.
 
 
 Open-Response Assessments
