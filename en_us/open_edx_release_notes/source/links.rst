@@ -41,6 +41,10 @@
 
 .. Maple doc links:
 
+.. _ARCHBOM-1860: https://openedx.atlassian.net/browse/ARCHBOM-1860
+
+.. _OEP-42: https://open-edx-proposals.readthedocs.io/en/latest/best-practices/oep-0042-bp-authentication.html
+
 .. _tutor mfe plugin README: https://github.com/overhangio/tutor-mfe#customise-mfes-logos
 
 .. Lilac doc links:

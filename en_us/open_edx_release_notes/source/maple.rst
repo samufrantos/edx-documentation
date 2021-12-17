@@ -20,8 +20,10 @@ Breaking Changes
 Studio login changed to OAuth
 -----------------------------
 
-In versions prior to Maple, Studio (CMS) shared a session cookie with the LMS, and redirected to the LMS for login. Studio is changing to become an OAuth client of the LMS, using the same SSO configuration that other IDAs use. (See [ARCHBOM-1860](https://openedx.atlassian.net/browse/ARCHBOM-1860); [OEP-42](https://open-edx-proposals.readthedocs.io/en/latest/best-practices/oep-0042-bp-authentication.html).)
-This is a breaking change; follow the Studio OAuth migration runbook as part of upgrading to Maple. For devstack, run::
+In versions prior to Maple, Studio (CMS) shared a session cookie with the LMS, and redirected to the LMS for login.
+Studio is changing to become an OAuth client of the LMS, using the same SSO configuration that other IDAs use. (See
+`ARCHBOM-1860`_; `OEP-42`_) This is a breaking change. Follow the Studio OAuth migration runbook as part of
+upgrading to Maple. For devstack, run::
 
     ./provision-ida-user.sh studio studio 18010
 
@@ -83,11 +85,12 @@ Altered Features
   * The breadcrumbs displayed at the top of a page in the legacy experience were organized by Course -> Sequence -> Unit -> Content Block Title, but in the new MFE breadcrumbs only includes Course -> Sequence -> Unit. This removes visual clutter of having the same title repeated in a small space on the page.
   * the MFE changes the URL scheme from::
 
-  LMS_BASE/courses/COURSE_KEY/courseware/SECTION_URLNAME/SEQUENCE_URLNAME/UNIT_INDEX?activate_block_id=COMPONENT_KEY
+      LMS_BASE/courses/COURSE_KEY/courseware/SECTION_URLNAME/SEQUENCE_URLNAME/UNIT_INDEX?activate_block_id=COMPONENT_KEY
 
-  to
+    to::
 
-  LEARNING_MFE_BASE/course/COURSE_KEY/SEQUENCE_KEY/UNIT_KEY
+      LEARNING_MFE_BASE/course/COURSE_KEY/SEQUENCE_KEY/UNIT_KEY
+
 - If all content inside a unit should be invisible to a cohort, but the sequence or the unit is not hidden, learners may be able to still see the titles of the content on the course outline, as well as the title of the sequence which contains only what should be hidden content to that learner. This issue can be removed by setting the learning_sequences.use_for_outlines waffle flag to true
 
 Maintained Features
