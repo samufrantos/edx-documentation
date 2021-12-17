@@ -31,7 +31,8 @@ upgrading to Maple. For devstack, run::
 django-cors-headers version updgraded
 -------------------------------------
 
-django-cors-headers version upgraded to 3.2.0. CORS_ORIGIN_WHITELIST now requires URI schemes. You will need to update your whitelist to include schemes, for example from this::
+django-cors-headers is upgraded to version 3.2.0. The setting :code:`CORS_ORIGIN_WHITELIST` now requires URI schemes.
+You will need to update your whitelist to include schemes, for example from this::
 
     CORS_ORIGIN_WHITELIST = ["foo.com"]
 
@@ -133,7 +134,7 @@ Various bug fixes and updates around course certificate generation
   * Supporting change: Update the list_with_level function in the Instructor Dashboard to accept a course-id over the entire course object (PR: 27646)
 - Removed the AUDIT_CERT_CUTOFF_DATE setting. Awarding Audit certificates will not be supported in V2 of Course Certificates
 - Removed the openedx/core/djangoapps/certificates app by merging the single api.py file into lms/djangoapps/certificates. All APIs functions have been been moved as is, so if you have any code in a third party repository that used this API, please point them to the new path. openedx/core/djangoapps/certificates/api.py → lms/djangoapps/certificates/api.py
-- Removed backpopulate_program_credentials management command in place of an updated notify_credentials command (@Albert (AJ) St. Aubin (Deactivated) )
+- Removed backpopulate_program_credentials management command in place of an updated notify_credentials command.
 
 
 Open-Response Assessments
