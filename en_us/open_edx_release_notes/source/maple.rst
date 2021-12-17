@@ -81,7 +81,13 @@ Altered Features
 - Course Navigation on the MFE and legacy experience will have minor differences.
 
   * The breadcrumbs displayed at the top of a page in the legacy experience were organized by Course -> Sequence -> Unit -> Content Block Title, but in the new MFE breadcrumbs only includes Course -> Sequence -> Unit. This removes visual clutter of having the same title repeated in a small space on the page.
-  * the MFE changes the URL scheme from `LMS_BASE/courses/COURSE_KEY/courseware/SECTION_URLNAME/SEQUENCE_URLNAME/UNIT_INDEX?activate_block_id=COMPONENT_KEY` to `LEARNING_MFE_BASE/course/COURSE_KEY/SEQUENCE_KEY/UNIT_KEY`
+  * the MFE changes the URL scheme from::
+
+  LMS_BASE/courses/COURSE_KEY/courseware/SECTION_URLNAME/SEQUENCE_URLNAME/UNIT_INDEX?activate_block_id=COMPONENT_KEY
+
+  to
+
+  LEARNING_MFE_BASE/course/COURSE_KEY/SEQUENCE_KEY/UNIT_KEY
 - If all content inside a unit should be invisible to a cohort, but the sequence or the unit is not hidden, learners may be able to still see the titles of the content on the course outline, as well as the title of the sequence which contains only what should be hidden content to that learner. This issue can be removed by setting the learning_sequences.use_for_outlines waffle flag to true
 
 Maintained Features
